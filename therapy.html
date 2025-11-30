@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This site presents the musical works of Ok.John, Gospel musician and author of several titles.">
+    <meta name="keywords" content="Ok.John, gospel musician, Nigeria, Canada">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <link rel="stylesheet" href="statics/okjohn.css">
+
+    <title>Ok.John</title>
+    
+    <link rel="icon" type="image/x-icon" href="statics/favicon.ico">
+</head>
+<body>
+
+    <header>
+
+         <script>
+            function toggleMenu() {
+                const navbar = document.querySelector('.navbar');
+                navbar.classList.toggle('active');
+            }
+
+            function closeMenuOnResize() {
+                const navbar = document.querySelector('.navbar');
+                if (window.innerWidth > 768) {
+                    navbar.classList.remove('active');
+                }
+            }
+            window.addEventListener('resize', closeMenuOnResize);
+
+         </script>
+
+    </header>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+    <nav class="navbar">
+        <a href="home.html">HOME</a>
+        <a href="home.html#AboutMe">BIO</a>
+        <a href="therapy.html">THERAPY</a>
+        <a href="mucic.html">MUSIC</a>
+        <a href="ebook.html">EBOOKS</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="#Contact">CONTACT</a>
+    </nav>
+    <div class="page"> 
+
+        <!-- TOP -->
+        <div class="video-container">
+        <video class="video-bg" autoplay loop muted playsinline>
+            <source src="statics/video1.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo HTML5.
+        </video>
+        </div>
+
+        <!-- Therapy-->
+        <div class="pageTherapy"> 
+            <section id="Therapy" class="therapy-section">
+                <div class="title"><img src="statics/1.png">
+                    <h2>Inspirational Therapy </h2>
+                </div>
+                <p class="subtitle">OK.JOHN INSPIRATION THERAPY CORP (Non-profit)</p>
+                <div class="therapy-details">
+                    
+                    <div class="details" >
+                        <h3>Healing Through Faith, Prayer and Inspiration</h3> <br>
+                        <p>
+                            OK.John offers <strong>Inspirational Therapy</strong> grounded in Christian faith and the power of prayer.
+                            As a gospel artist, inspirational speaker and author, his mission is to support individuals affected by
+                            drug abuse, addictions, violence and emotional struggles. Through spiritual guidance, prayer and biblical
+                            teachings, we help restore hope and rebuild lives.
+                        </p>
+                    </div>
+                    <div class="details" >
+                        <h3>Our Mission</h3> <br>
+                        <p>
+                            We believe that true healing comes from God. Our goal is to help individuals reclaim:
+                        </p>
+                        <ul>
+                            <li>Inner peace and mental alertness</li>
+                            <li>Spiritual strength and clarity</li>
+                            <li>Confidence and self-worth</li>
+                            <li>A renewed sense of purpose in Christ</li>
+                        </ul>
+                    </div>
+                    <div class="details" >
+                        <h3>What We Offer</h3> <br> 
+                        <ul>
+                            <li>One-on-one inspirational and faith-based support</li>
+                            <li>Prayer sessions and biblical encouragement</li>
+                            <li>Youth mentorship and preventive counseling</li>
+                            <li>Spiritual coaching for families and individuals</li>
+                            <li>Community outreach and awareness programs</li>
+                        </ul>
+                    </div>
+                    <div class="details" >
+                        <h3>Why Inspirational Therapy?</h3> <br>
+                        <p>
+                            Because prayer transforms. The Word heals. And through God’s grace, every life can rise again.
+                            Our approach combines faith, compassion, inspiration and practical guidance to help individuals
+                            walk toward healing and freedom.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div class="pageContact">
+        <section id="Contact">
+            <div class="title">
+                <img src="statics/1.png" class="contact-logo">
+                <h2 style="color:white;">Contacts</h2>
+            </div>
+            <div class="contact-flex">
+
+                <!-- LEFT : CONTACT INFO -->
+                <div class="contact-left">
+                    
+
+                    <div class="contact-info">
+                        <p class="contact-name">OK. JOHN OFFICIAL</p>
+                        <p class="contact-desc">
+                            Ogaziri John Okereke — Gospel music director & promotions, author, inspirational speaker,
+                            & deliverance prayer for global peace, drug abuse & addictions.
+                        </p>
+
+                        <div class="info-row">
+                            <p class="info-label">Email address:</p>
+                            <p class="info-text">himpower2019@gmail.com</p>
+                        </div>
+
+                        <div class="info-row">
+                            <p class="info-label">Phone:</p>
+                            <p class="info-text">6393841444</p>
+                        </div>
+
+                        <div class="info-row">
+                            <p class="info-label">Office Address:</p>
+                            <p class="info-text">3710 Miyowahkotowin Rd Saskatoon- Saskatchewan Canada S7L5L4</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MIDDLE : VERTICAL LINE -->
+                <div class="contact-divider"></div>
+
+                <!-- RIGHT : SOCIAL NETWORKS -->
+                <div class="contact-right">
+                    <h3 class="social-title">OK.JOHN SOCIAL NETWORKS</h3>
+
+                    <div class="social-grid">
+                        <a class="network-card" href="https://www.youtube.com/channel/UC3USIhB59LpStuJqL7O4LtQ" target="_blank">
+                            <img src="statics/youtube-logo.png" alt="YouTube">
+                            <span>YouTube</span>
+                        </a>
+
+                        <a class="network-card" href="https://www.amazon.ca/stores/author/B08ZM7KWLP" target="_blank">
+                            <img src="statics/amazon.png" alt="Amazon">
+                            <span>Amazon</span>
+                        </a>
+
+                        <a class="network-card" href="https://www.tiktok.com/" target="_blank">
+                            <img src="statics/tiktok.png" alt="TikTok">
+                            <span>TikTok</span>
+                        </a>
+
+                        <a class="network-card" href="https://x.com/" target="_blank">
+                            <img src="statics/x.png" alt="X">
+                            <span>X</span>
+                        </a>
+
+                        <a class="network-card" href="https://www.instagram.com/" target="_blank">
+                            <img src="statics/instagram.png" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+
+                        <a class="network-card" href="https://www.facebook.com/ok.john.9469" target="_blank">
+                            <img src="statics/facebook.png" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="copyright">© 2025 OK.John — All Rights Reserved. Made by mariamadb[at]hotmail.com</div>
+    </footer>
+
+
+    <script>
+        const events = document.querySelectorAll('.event');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        events.forEach(event => observer.observe(event));
+
+       // Caroussel
+        let currentIndex = 0;
+
+        const container = document.querySelector(".ebooks-container");
+        const items = document.querySelectorAll(".amazon_ebook");
+        const totalItems = items.length;
+
+        document.querySelector(".carousel-btn.next").addEventListener("click", () => {
+            if (currentIndex < totalItems - 1) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        document.querySelector(".carousel-btn.prev").addEventListener("click", () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        function updateCarousel() {
+            const offset = -currentIndex * 100; 
+            container.style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+
+    <script>
+        function createCarousel(containerSelector, prevBtnSelector, nextBtnSelector) {
+            const container = document.querySelector(containerSelector);
+
+            const btnPrev = document.querySelector(prevBtnSelector);
+            const btnNext = document.querySelector(nextBtnSelector);
+
+            const scrollAmount = 400;  
+
+            btnPrev.addEventListener("click", () => {
+                container.scrollLeft -= scrollAmount;
+            });
+
+            btnNext.addEventListener("click", () => {
+                container.scrollLeft += scrollAmount;
+            });
+        }
+
+        /* Photo Carousel */
+        createCarousel(".gallery-photos-container", ".gallery-prev-photo", ".gallery-next-photo");
+
+        /* Video Carousel */
+        createCarousel(".gallery-videos-container", ".gallery-prev-video", ".gallery-next-video");
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            if (window.location.hash && performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+                window.location.href = window.location.pathname;
+            }
+        });
+    </script>
+
+</body>
+</html>
