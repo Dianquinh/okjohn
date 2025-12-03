@@ -1,0 +1,1214 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+body {
+  font-family: 'Raleway', serif;
+  line-height: 1.6;
+}
+
+/*GROUPE GROUPE GROUPE*/
+.page {
+    display: flex;
+    flex-direction: column; 
+}
+.pageMe {
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;       
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.pageMe::before{
+  content: "";
+  position: absolute;
+  top: -20%;              
+  left: 0;
+  width: 100%;
+  height: 120%;           
+  background-image: url("image.png"); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;          
+  transform: translateY(0); 
+  will-change: transform;
+  pointer-events: none;
+  transform: translateY(var(--parallax, 0px));
+}
+
+.page-inner{
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  text-align: center;
+  backdrop-filter: none;
+}
+
+
+.pageMusic {
+margin-right: 0;
+margin-left: 0;
+display: inline-block;
+background: url(image6.png) no-repeat center / cover;
+}
+.pageEbooks{
+margin-right: 0;
+margin-left: 0;
+display: inline-block;
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+.pageTherapy{
+margin-right: 0;
+margin-left: 0;
+display: inline-block;
+background: url(JesusPortrait.svg) no-repeat center / cover;
+}
+.pageGallery{
+background: url(church.png) no-repeat center / cover;
+}
+.pageContact{
+margin-right: 0;
+margin-left: 0;
+background: url(BrownGood.png) no-repeat center / cover;
+color:white;
+}
+#AboutMe {
+  display: flex;
+  align-items: center;   
+  gap: 40px; 
+}
+
+#Ebooks {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#Therapy {
+    position: relative;
+    z-index: 1;
+    /*background-color: rgba(197, 189, 145, 0.63);*/
+    background-color: rgba(197, 189, 145, 0.63);
+  }
+#Contact{
+    background-color: rgba(0, 0, 0, 0.836);
+    
+  }
+
+
+/*TOP TOP TOP*/
+div.barre-nav {
+  background-color: black;
+  height: 20px;
+}
+.navbar {
+  display: flex;
+  gap: 50px;
+  background-color: rgb(252, 191, 26); 
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.navbar a {
+  color: rgb(43, 33, 3);
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: bold;
+}
+.navbar a:hover {
+  background-color: #8d7f42a4;
+  border-radius: 0px;
+}
+
+.video-container {
+    width: 100%;
+    height: 550px; 
+    overflow: hidden;
+    position: relative;
+}
+.video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.video2-container {
+    display: none;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: Arial, sans-serif;
+  color: black;
+  text-align: center;
+}
+  section h2{
+  font-size: 60px;
+  font-family: Arial, sans-serif;
+  color: black;
+  text-align: center;
+  }
+section p{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Raleway', serif;
+    text-align: justify;
+
+  }
+  /*BIO*/
+.bio{
+  background-color: rgba(3, 21, 37, 0.63);
+  padding-left: 9px;
+  padding-right: 9px;
+}
+.title_me {
+  display: flex;          
+  align-items: center;     
+  justify-content: flex-end;
+  gap: 35px;        
+  margin-left: 10%;
+}
+.title_me img {
+  width: 475px;
+  height: 386px;
+  object-fit: cover;
+  border: 17px solid rgba(3, 21, 37, 0.5);
+}
+.John{
+  margin-bottom: 40px;
+}
+.John p{
+  color: white;
+  margin-right: 7%;
+  margin-left: 7%;
+  font-weight: bold;
+}
+.John h1{
+  color: rgb(252, 191, 26);
+} 
+
+
+/*GENREAL GENERAL GENREAL GENERAL GENREAL GENERAL GENREAL GENERAL*/
+
+.title img {
+  width: 150px;
+  height: 170px;
+  object-fit: cover;
+}
+.title {
+  display: flex;          
+  align-items: center;     
+  justify-content: flex-start;
+  gap: 15px;              
+}
+.title2 {
+  display: flex;          
+  align-items: center;     
+  justify-content: center;
+  text-align: center;
+  gap: 20px;        
+  margin-left: 10%;  
+  margin-right: 10%;    
+}
+.title .youtube {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+/* EBOOK */
+.ebook-container h1{
+  font-size: 100px;
+  font-weight:bold;
+  color: rgb(241, 171, 20);
+}
+.ebook-container{
+    width: 100%;
+    height: 300px; 
+    overflow: hidden;
+    position: relative;
+    background: url(ebookoj.png) no-repeat center / cover;
+    align-items: justify;
+    display: flex;              
+    justify-content: center;   
+    align-items: center;   
+}
+a.amazon_link {
+  padding: 5px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;          
+  align-items: center;     
+  justify-content: center;
+    flex: 0 0 auto;       
+    text-align: center;
+}
+a.amazon_link:hover{
+  color: rgb(128, 119, 5);
+}
+a.amazon_link img{
+   width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.amazon_ebook {
+    flex: 0 0 100%;       
+    display: flex;          
+    flex-direction: row;      
+    align-items: center;      
+    gap: 20px;               
+    
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.amazon_ebook img{
+  width: 300px;
+  height: 470px;
+  object-fit: cover;
+}
+.ebook-info p {
+  font-weight: bold;
+  margin-bottom: 20px;    
+}
+.ebook-info .buy{
+  display: inline-block;    
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.ebook-info .buy:hover {
+  background: rgb(247, 193, 16);
+}
+.carousel1 {
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    overflow: hidden;
+    background-color: rgba(44, 22, 2, 0.616);
+    margin-top: 20px;
+}
+.carousel-btn {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background: black;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 15px 12px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.carousel-btn.prev {
+    left: 10%;
+}
+.carousel-btn.next {
+    right: 10%;
+}
+.carousel-btn:hover {
+    background: rgb(252, 191, 26);
+}
+.ebooks-container{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 15px;
+  padding: 10px;
+  flex-direction: row;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  
+}
+.video-bg2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+
+/* MUSIC */
+
+.music-container{
+    width: 100%;
+    height: 300px; 
+    overflow: hidden;
+    position: relative;
+    background: url(music.png) no-repeat center / cover;
+    align-items: justify;
+    display: flex;              
+    justify-content: center;   
+    align-items: center;   
+}
+.music-container h1{
+  font-size: 90px;
+  font-weight:bold;
+  color: white;
+  background-color: black;
+}
+a.youtube_link {
+  padding: 5px;
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;      
+  justify-content: center;
+  flex: 0 0 auto;       
+  text-align: center;
+}
+a.youtube_link:hover{
+  color: rgb(133, 92, 30);
+}
+a.youtube_link img{
+  width: 400px;
+  border: 10px solid rgb(248, 215, 26);
+}
+a.youtube_link img.logo_youtube{
+  width: 115px;
+  height: 115px;
+  border: 0px solid ;
+} 
+.sounds {
+  margin-top: 35px;
+  margin-bottom: 150px;
+  margin-left: 7%; 
+  display: flex;
+  overflow-x: auto;      
+  gap: 70px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+.sounds::-webkit-scrollbar {
+    height: 10px; 
+}
+.sounds::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 9px;
+}
+.sounds .youtube_single {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    border: 3px solid black;
+    padding: 8px;
+}
+
+
+/* THERAPY*/
+.therapy-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    margin-top: 20px;
+    margin-right: 8%;
+    margin-left:8%;
+    padding-bottom: 80px;
+}
+.therapy-details .details {
+    flex: 1; 
+    background: rgba(255, 255, 255, 0.781);
+    border: 2px solid #fdfcfcd7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+.therapy-details .details h3 {
+    margin-top: 0;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    color:rgb(252, 191, 26)
+}
+.therapy-details .details p,
+.therapy-details .details ul {
+    font-size: 15px;
+    line-height: 1.5;
+}
+.therapy-details .details ul{
+  margin-left: 20px;
+}
+.subtitle{
+  font-size: 25px;
+  text-align: center;
+  font-weight:bold;
+  color:rgb(143, 96, 10);
+}
+
+
+/* ==== GALLERY ==== */
+.photo-video, .photo-video2 {
+    display: flex;
+    gap: 10px;         
+    align-items: center; 
+    margin-left: 2%;
+    margin-bottom: 30px;
+}
+.photo-video2 {
+    margin-bottom: 80px;
+  }
+.left-title {
+    width: 20%;            
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+}
+.right-carousel {
+    width: 80%;             
+    position: relative; 
+}
+.gallery-subtitle{
+  font-size: 50px;
+  color:white;
+}
+.gallery-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    color: rgb(95, 58, 4);
+    font-size: 2rem;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8%;
+    z-index: 30;
+}
+.gallery-prev-photo, .gallery-prev-video {
+    left: -60px;
+}
+.gallery-next-photo, .gallery-next-video {
+    right: -60px;
+}
+.carousel2 {
+    position: relative;
+    margin: 0px 70px; 
+}
+.gallery-photos-container,
+.gallery-videos-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0;
+}
+.gallery-photos-container::-webkit-scrollbar,
+.gallery-videos-container::-webkit-scrollbar {
+    height: 10px;
+}
+.gallery-photos-container::-webkit-scrollbar-thumb,
+.gallery-videos-container::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 20px;
+}
+.gallery-photos-container::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+.gallery_photo {
+    flex: 0 0 calc(50% - 20px); 
+}
+.gallery_photo img {
+    height: 380px;
+    border-radius: 0;
+}
+.gallery_video {
+    flex: 0 0 280px;
+}
+.gallery_video video {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+/* CONTACT */
+.contact-block {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact-logo {
+    width: 140px;
+    height: 160px;
+    object-fit: cover;
+}
+.contact-title {
+    font-size: 36px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.contact-info {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.contact-name {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(244, 198, 39);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+.contact-desc {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.info-row {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;   
+    margin: 8px 0;
+    gap: 10px;
+}
+.info-label {
+    font-weight: bold;
+    color: rgb(255, 214, 94);
+}
+.info-text {
+    color: white;
+}
+.icon-small {
+    width: 40px;
+    height: 40px;
+}
+
+.social-gridn {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0px;
+    justify-items: center;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    justify-items: center; 
+}
+.network-card {
+    background: white;
+    width: 60px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+.network-card img {
+  margin-top: 6px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.network-card:hover {
+    background: rgb(244, 198, 39);
+    transform: translateY(-5px);
+}
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.contact-left {
+    width: 45%;
+    text-align: left;
+}
+.contact-right {
+    width: 45%;
+    text-align: left;
+}
+.contact-divider {
+    width: 35px;
+    background: white;
+    height: 100%;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 20px 0;
+    background-color: black;
+}
+.copyright{
+  color: white;
+  background-color: black;
+  margin-top: 55px;
+  font-size: 16px;
+  bottom: 0;
+  text-align: center;
+  font-weight: bold;
+}
+.design{
+  color: white;
+  font-size: 16px;
+  bottom: 0;
+  text-align: center;
+  font-weight: bold;
+}
+.design-name{
+  font-size: 30px;
+    font-weight: bold;
+    color: rgb(244, 198, 39);
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+/*####################################################################################*/
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+      display: none; 
+      flex-direction: column;
+      width: 100%;
+      background-color:rgb(252, 191, 26);
+      position: relative; 
+      height: auto;
+      padding: 0 10 0 0;
+  }
+
+  .navbar.active {
+      display: inline-block; 
+  }
+
+  .navbar a {
+      display: block; 
+      background-color:rgb(252, 191, 26); 
+      color: white;
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid white;
+      width: 100%;
+      font-size: 16px;
+  }
+
+  .menu-toggle {
+      display: block;
+      background-color: rgb(252, 191, 26);
+      color: white;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      width: 100%;
+      padding: 10px;
+      text-align: left;
+      position: relative; 
+  }
+
+  section h2{
+    font-size: 35px;
+    margin-bottom: 35px;
+  }
+
+  section p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  #AboutMe {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;  
+    gap: 10px; 
+  }
+  .title_me {
+    display: flex;          
+    align-items: center;     
+    justify-content: flex-end;
+    gap: 15px;        
+    margin-left: 5%;
+  }
+  .title_me img {
+    width: 330px;
+    height: 245px;
+    border: 12px solid rgba(3, 21, 37, 0.5);
+  }
+  .John{
+  margin-bottom: 15px;
+  }
+  .John p{
+    margin-right: 3%;
+    margin-left: 3%;
+    font-size: 14px;
+  }
+  .John h1{
+    font-size: 39px;
+  }
+
+  .music-container h1{
+  font-size: 45px;}
+   .ebook-container h1{
+  font-size: 85px;
+ }
+
+ .video-container {
+  display:none;
+ }
+ .video2-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 1080/1920 = ratio 16:9 */
+    overflow: hidden;
+    display: block;
+  }
+  .video2-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;  
+  }
+  .video2-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    }
+
+    .title img {
+      width: 90px;
+      height: 110px;
+    }
+
+    .gallery_photo img {
+      height: 200px;
+    }
+    .gallery-subtitle{
+      font-size: 30px;
+    }
+    .gallery-btn {
+    font-size: 2rem;
+    padding: 1px 2px;
+    }
+    .photo-video, .photo-video2 {
+    margin-left: 3%;
+    }
+    .gallery-prev-photo, .gallery-prev-video {
+    left: -25px;
+    }
+    .gallery-next-photo, .gallery-next-video {
+        right: -25px;
+    }
+    .carousel2 {
+    position: relative;
+    margin: 0px 45px; 
+    }
+    .therapy-details {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 10px;
+    margin-top: 20px;
+    margin-right: 8%;
+    margin-left:8%;
+    padding-bottom: 50px;
+  }
+  .subtitle{
+  font-size: 20px;
+  }
+  .therapy-details .details h3 {
+    font-size: 20px;
+    }
+  a.amazon_link {
+    padding: 5px;
+    font-size: 24px;
+  }
+  .amazon_ebook img{
+  width: 100px;
+  height: 160px;
+  object-fit: cover;
+  }
+  .amazon_ebook p{
+  font-size: 14px;
+  }
+  .amazon_ebook {       
+    flex-direction: column;     
+  }
+  .carousel1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+  }
+  .carousel-btn {
+    top: 60%;
+    font-size: 2.5rem;
+    padding: 2px 2px;
+    }
+    .carousel-btn.prev {
+        left: 2%;
+    }
+    .carousel-btn.next {
+        right: 2%;
+    }
+    a.youtube_link img.logo_youtube{
+      width: 65px;
+      height: 65px;
+    } 
+    .title .youtube {
+    font-size: 18px;
+    }
+    .contact-flex {
+    display: flex;
+    flex-direction: column;   
+    gap: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .contact-left,
+  .contact-right {
+      width: 100% !important; 
+  }
+  .contact-name {
+    font-size: 23px;
+    margin-bottom: 5px;
+  }
+  .design-name{
+  font-size: 24px;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .navbar {
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    background-color:rgb(252, 191, 26); 
+    position: relative; 
+    height: auto;
+    padding: 0 10 0 0;
+}
+
+.navbar.active {
+    display: inline-block; 
+}
+
+.navbar a {
+    display: block; 
+    background-color:rgb(252, 191, 26);  
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    width: 100%;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: block;
+    background-color:rgb(252, 191, 26); 
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    position: relative; 
+  }
+  #AboutMe {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;  
+    gap: 10px; 
+  }
+  .title_me {
+    display: flex;          
+    align-items: center;     
+    justify-content: flex-end;
+    gap: 15px;        
+    margin-left: 5%;
+  }
+  .title_me img {
+    width: 400px;
+    height: 295px;
+    border: 12px solid rgba(3, 21, 37, 0.5);
+  }
+  .John{
+  margin-bottom: 15px;
+  }
+  .John p{
+    margin-right: 9%;
+    margin-left: 9%;
+    font-size: 14px;
+  }
+  .John h1{
+    font-size: 47px;
+  }
+
+  .music-container h1{
+  font-size: 65px;}
+
+  .ebook-container h1{
+  font-size: 85px;
+  }
+
+   .video-container {
+  display:none;
+ }
+ .video2-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 1080/1920 = ratio 16:9 */
+    overflow: hidden;
+    display: block;
+  }
+  .video2-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;  
+  }
+  .video2-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    }
+ 
+    .gallery_photo img {
+    height: 280px;
+    }
+    .gallery-subtitle{
+      font-size: 40px;
+    }
+    .gallery-btn {
+    font-size: 2rem;
+    padding: 1px 2px;
+    }
+    .photo-video, .photo-video2 {
+    margin-left: 0;}
+
+    .gallery-prev-photo, .gallery-prev-video {
+    left: -25px;
+    }
+    .gallery-next-photo, .gallery-next-video {
+        right: -25px;
+    }
+    .carousel2 {
+    position: relative;
+    margin: 0px 45px;
+    }
+    .therapy-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    margin-top: 30px;
+    margin-right: 4%;
+    margin-left:4%;
+    padding-bottom: 60px;
+  }
+  .subtitle{
+    font-size: 23px;
+  }
+  a.amazon_link {
+    padding: 5px;
+    font-size: 28px;
+  }
+
+   .amazon_ebook img{
+  width: 100px;
+  height: 160px;
+  object-fit: cover;
+  }
+  .amazon_ebook p{
+  font-size: 15px;
+  }
+  .amazon_ebook {       
+    flex-direction: column;     
+  }
+  .carousel1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+  }
+  .carousel-btn {
+    top: 60%;
+    font-size: 2.5rem;
+    padding: 2px 2px;
+    }
+    .carousel-btn.prev {
+        left: 2%;
+    }
+    .carousel-btn.next {
+        right: 2%;
+    }
+    .contact-name {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+}
+
+
+@media (min-width: 1100px) and (max-width: 1299px) {
+  .navbar {
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    background-color:rgb(252, 191, 26); 
+    position: relative; 
+    height: auto;
+    padding: 0 10 0 0;
+}
+
+.navbar.active {
+    display: inline-block; 
+}
+
+.navbar a {
+    display: block; 
+    background-color:rgb(252, 191, 26);  
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    width: 100%;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: block;
+    background-color:rgb(252, 191, 26); 
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    position: relative; 
+  }
+  #AboutMe {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;  
+    gap: 10px; 
+  }
+  .title_me {
+    display: flex;          
+    align-items: center;     
+    justify-content: flex-end;
+    gap: 15px;        
+    margin-left: 5%;
+  }
+  .title_me img {
+    width: 400px;
+    height: 295px;
+    border: 12px solid rgba(3, 21, 37, 0.5);
+  }
+  .John{
+  margin-bottom: 15px;
+  }
+  .John p{
+    margin-right: 9%;
+    margin-left: 9%;
+    font-size: 14px;
+  }
+  .John h1{
+    font-size: 47px;
+  }
+
+  .music-container h1{
+  font-size: 65px;}
+
+  .ebook-container h1{
+  font-size: 85px;
+  }
+
+  .video2-container {
+  display:none;
+ }
+
+ .gallery_photo img {
+    height: 340px;
+    }
+
+  .gallery-subtitle{
+      font-size: 40px;
+    }
+  .gallery-btn {
+    font-size: 2rem;
+    padding: 1px 12px;
+    }
+    .photo-video, .photo-video2 {
+    margin-left: 0;
+  }
+    .carousel2 {
+    position: relative;
+    margin: 0px 45px; 
+    }
+    .contact-name {
+    font-size: 27px;
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 1300px) {
+.menu-toggle {
+      display: none;
+  }
+
+  .navbar {
+      display: flex;
+      flex-direction: row;
+  }
+
+   .John p{
+    margin-right: 9%;
+    margin-left: 9%;
+  }
+
+  .music-container  h1{
+  font-size: 73px;
+  }
+  .ebook-container h1{
+    font-size: 85px;
+  }
+
+  .video2-container {
+  display:none;
+ }
+
+ .gallery-subtitle{
+      font-size: 50px;
+    }
+
+}
