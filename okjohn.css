@@ -683,6 +683,31 @@ footer {
     margin-bottom: 4px;
     text-align: center;
 }
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.cookie-banner button {
+    background: #f4c627;
+    border: none;
+    padding: 8px 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.cookie-banner button:hover {
+    opacity: 0.8;
+}
 
 /*####################################################################################*/
 
