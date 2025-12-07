@@ -17,7 +17,7 @@
     function loadGoogleAnalytics() {
         const ga = document.createElement('script');
         ga.setAttribute('async', '');
-        ga.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"; 
+        ga.src = "https://www.googletagmanager.com/gtag/js?id=G-8CK0181PF2"; 
         document.head.appendChild(ga);
 
         window.dataLayer = window.dataLayer || [];
