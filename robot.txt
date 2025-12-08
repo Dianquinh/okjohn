@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://okjohn.ca/sitemap.xml
