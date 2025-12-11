@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://okjohn.ca/</loc></url>
-  <url><loc>https://okjohn.ca/index.html</loc></url>
-  <url><loc>https://okjohn.ca/music.html</loc></url>
-  <url><loc>https://okjohn.ca/ebook.html</loc></url>
-  <url><loc>https://okjohn.ca/gallery.html</loc></url>
-  <url><loc>https://okjohn.ca/therapy.html</loc></url>
+  <url>
+    <loc>https://okjohn.ca/</loc>
+  </url>
+  <url>
+    <loc>https://okjohn.ca/index.html</loc>
+  </url>
+  <url>
+    <loc>https://okjohn.ca/music/</loc>
+  </url>
+  <url>
+    <loc>https://okjohn.ca/ebook/</loc>
+  </url>
+  <url>
+    <loc>https://okjohn.ca/gallery/</loc>
+  </url>
+  <url>
+    <loc>https://okjohn.ca/therapy/</loc>
+  </url>
+  <url>
+    <loc>https://okjohn.ca/favicon.ico</loc>
+  </url>
 </urlset>
-<url>
-  <loc>https://okjohn.ca/favicon.ico</loc>
-</url>
+
 
 
